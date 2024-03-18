@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+.arsenal-regular {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tital {
+  margin-top: 5px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textBox {
+  background-color: rgba(17, 16, 19, 0.8);
+  width: 50%;
+  border-radius: 10px;
+  margin: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textBox h1,
+.textBox p {
+  white-space: normal;
+  color: rgb(223, 176, 205);
+  font-weight: 700;
+  opacity: 1;
+}
+.textBox h1 {
+  font-size: 4rem;
+}
+.titalP {
+  font-size: 20px;
+}
+.textBox img {
+  height: 100px;
+}
+.parallax {
+  background-image: url("../img/pexels-alesia-kozik-6765706.jpg");
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+header {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navBox {
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  border: none;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link {
+  color: #333;
+  border-radius: 5px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #a16d99 !important;
+}
+.navbar-nav .nav-link.active {
+  background-color: rgb(71, 37, 62) !important;
+  color: #fff !important;
+}
+.checkDiv {
+  margin-top: 0px;
+}
+.switchBtn {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  transform: scale(1.5);
+}
+.form-switch {
+  position: relative;
+  padding: 0;
+}
+.contentBox {
+  width: 85%;
+  background-color: #fff;
+}
+
+.coinBox {
+  border: 1px solid #a19b9b;
+  background-color: 248, 249, 250;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.moreInfoBtn {
+  top: 0;
+  margin-bottom: 5px;
+}
+.coinInfoDiv .collapse {
+  max-height: 100px;
+  min-width: 100%;
+  overflow-y: auto;
+}
+.coinInfoDiv {
+  text-align: center;
+  background-color: #ece7e7;
+  position: relative;
+  margin-bottom: 0px;
+}
+.coinText {
+  margin-right: auto;
+  margin-left: auto;
+}
+#coinImg {
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+.loadDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 85%;
+}
+.loadMoreBtn {
+  background-color: #dc82ce;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+footer {
+  margin-bottom: 0;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* modal */
+#myModal {
+  text-align: center;
+}
+
+.delete-button {
+  border: none;
+  background: none;
+}
+
+.lastCoinTable {
+  background-color: #ebdde4;
+}
+.modalTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.modalTable td,
+.modalTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.modalTable tr:nth-child(even) {
+  background-color: #ebdde4;
+}
+
+.modalTable tr:hover {
+  background-color: #ddd;
+}
+
+.modalTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #a38a96;
+  color: white;
+}
+
+#errorElert {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* live reports */
+#chartContainer {
+  height: 370px;
+  width: 100%;
+}
+
+/* about */
+/* contact info & img */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+.headerRow {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+#meImg {
+  height: 100px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.textAbout {
+  margin-left: 0; /* Remove margin */
+}
+
+.full-name {
+  font-size: 40px;
+  /*   width: 60vw;
+ */
+}
+.first-name {
+  font-weight: 700;
+}
+
+.last-name {
+  font-weight: 400;
+}
+.aboutTables {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.email,
+.phone,
+.address {
+  font-weight: 500;
+  color: rgb(115, 108, 99);
+}
+.separator {
+  height: 10px;
+  display: inline-block;
+  border: 1px solid rgb(156, 155, 159);
+  margin: 0px 10px;
+}
+/* qoute */
+.quote {
+  text-align: center;
+  color: rgb(2, 2, 31);
+  margin-top: 3rem;
+}
+
+.my-quote {
+  font-family: "Varela Round", sans-serif;
+}
+.win {
+  font-weight: 800;
+  color: rgb(214, 74, 219);
+}
+
+#snackbar {
+  visibility: hidden; /* Hidden by default */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded corners */
+  padding: 16px; /* Padding */
+  position: fixed; /* Fixed position - sit on top of the page */
+  z-index: 1; /* Specify a stack order */
+  left: 50%; /* Center the snackbar horizontally */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* media */
+@media screen and (max-width: 900px) {
+  .textDiv {
+    font-size: 10px;
+  }
+  .textBox {
+    width: 80%;
+    margin: 3rem;
+  }
+  .headerRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .imgDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutTextDiv {
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .imgDiv {
+    position: static; /* Change position to static */
+    width: auto; /* Set width to auto */
+    margin-left: auto; /* Align to the left */
+    margin-right: auto;
+  }
+  .aboutTables {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .aboutContent {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  .switchBtn {
+    transform: scale(1.5);
+    top: 0;
+    right: 0;
+  }
+
+  .textBox h1 {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+  .titalP {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+    margin: 0;
+  }
+}

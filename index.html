@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <!--javascript of bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Library  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--  CanvasJS-->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- my script -->
+    <script defer src="./js/script.js"></script>
+    <link rel="icon" href="./icons/4634978_pig_coin_financial_money_icon.png" />
+    <title>Prygtonite</title>
+  </head>
+  <body>
+    <!-- TITLE -->
+    <header>
+      <div class="container-fluid tital parallax">
+        <div class="textBox container">
+          <h1 class="arsenal-regular">Prygtonite</h1>
+          <p class="titalP text-center arsenal-regular">a crypto curency app</p>
+          <img class="img-fluid" src="./img/Frame 1 (1).png" alt="" />
+        </div>
+      </div>
+      <!-- NAV -->
+      <div class="container-fluid navBox">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Navbar toggle button (for small screens) -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar sections -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <!-- HOME -->
+                <li class="nav-item">
+                  <!-- onclick="navigate('home') -->
+                  <button class="nav-link active" id="homePage">Home</button>
+                </li>
+                <!-- Live Reports -->
+                <li class="nav-item">
+                  <button class="nav-link" id="live-reports">
+                    Live Reports
+                  </button>
+                </li>
+                <!-- About -->
+                <li class="nav-item">
+                  <button class="nav-link" id="aboutMe">About</button>
+                </li>
+              </ul>
+              <!-- Search form -->
+              <form class="d-flex">
+                <input
+                  class="form-control me-2 searchInput"
+                  type="search"
+                  placeholder="Search for crypto"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success searchBtn" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- PROGRESS BAR -->
+      <div class="progress" style="display: none">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        ></div>
+      </div>
+    </header>
+    <!-- content box-->
+    <div class="container-fluid contentBox"></div>
+    <!-- MODAL FOR EXIDED AMOUNT OF COINS -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h6>In Order To Add:</h6>
+            <table class="lastCoinTable modalTable"></table>
+            <p>Please Remove 1 Coin</p>
+            <table class="modalCoinTable modalTable"></table>
+            <span id="errorElert">please remove a coin first</span>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success modalSaveBtn"
+              data-bs-dismiss="modal"
+            >
+              save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="snackbar">Notification Message</div>
+    <!-- FOOTER -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/profile.php?id=100093588871375"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.instagram.com/yarden102?igsh=ZnJhZ3B2N25na2Fl"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.linkedin.com/in/yarden-dickshtein-667b378b/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://github.com/yardend42"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark arsenal-regular"
+        style="background-color: rgba(0, 0, 0, 0.3); height: 5vh"
+      >
+        © 2024 yarden102
+      </div>
+    </footer>
+
+   
+    <br />
+  </body>
+</html>
